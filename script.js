@@ -33,6 +33,12 @@ async function checkWeather(city){
 	else if(data.weather[0].main=="Mist"){
 		weatherIcon.src="images/mist.png"
 	}
+	else if(data.weather[0].main=="Clear"){
+		weatherIcon.src="images/clear.png"
+	}
+	else if(data.weather[0].main=="Snow"){
+		weatherIcon.src="images/snow.png"
+	}
 }
 error.style.display="none";
 		display.style.display="block";
